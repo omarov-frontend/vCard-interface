@@ -21,6 +21,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    width: 87px;
+    height: auto;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -33,12 +39,16 @@
     font-size: 15px;
 }
 
-.fa-twitter {
-    color: #92b4cd;
+.fa-github {
+    color: #000;
 }
 
-.fa-dribbble {
-    color: #de9dc1;
+.fa-instagram {
+    color: #d6249f;
+}
+
+.fa-vk {
+    color: #4c75a3;
 }
 
 .vcard {
@@ -53,15 +63,15 @@
 
 .social-icons {
     position: absolute;
-    left: -31px;
-    top: 20px;
+    left: -28px;
+    top: 15px;
     display: flex;
     flex-direction: column;
 }
 
 .social-icons__item {
     background-color: #e9e9e9;
-    padding: 7px;
+    padding: 5px;
     margin-bottom: 5px;
     border-left: 1px solid #a4a4a4;
     border-top: 1px solid #a4a4a4;
@@ -77,6 +87,7 @@
 
 .vcard__info-photo {
     margin-right: 15px;
+    min-width: 87px;
 }
 
 .vcard__user {
@@ -101,6 +112,15 @@
     line-height: 1.6;
 }
 
+.vcard__description a {
+    color: #606d77;
+    text-decoration: none;
+}
+
+.vcard__description a:hover {
+    text-decoration: underline;
+}
+
 .menu {
     background-color: #507997;
     box-shadow: 0px 15px 25px -15px #000;
@@ -122,9 +142,14 @@
     padding: 15px 15px;
     text-decoration: none;
     color: #e9e9e9;
-    transition: background .1s linear;
+    transition: background-color .1s linear;
 }
 
+.nav__link_active,
 .nav__link:hover {
     background-color: #738fa4;
+}
+
+.contact-page {
+    display: none;
 }
