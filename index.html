@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Визитная-карточка">
+    <meta name="keywords" content="Вёрстка - HTML, CSS, Js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>vCard-interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <div class="vcard">
+            <div class="social-icons">
+                <a class="social-icons__item" href="https://github.com/omarov-frontend" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-icons__item" href="https://www.instagram.com/shama_omarov/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-icons__item" href="https://vk.com/shama_omarov" target="_blank">
+                    <i class="fab fa-vk"></i>
+                </a>
+            </div>
+
+            <div class="vcard__info">
+                <div class="vcard__info-photo">
+                    <img class="vcard__user" src="img/shoma.JPG" alt="User-photo">
+                </div>
+                <div class="vcard__info-description">
+                    <div class="about-page">
+                        <h2 class="vcard__title">Shamil Omarov</h2>
+                        <p class="vcard__description">
+                            Hello, I'm a web developer, specializing
+                            in UI, web interface with Photoshop.
+                            Over 1 years of experience and passion
+                            in the work I do.
+                        </p>
+                    </div>
+
+                    <div class="contact-page">
+                        <h2 class="vcard__title">Contacts:</h2>
+                        <p class="vcard__description">Phone: <a href="tel:+79099999999">89099999999</a></p>
+                        <p class="vcard__description">Email: <a href="mailto:omarov@mail.ru">omarov@mail.ru</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <nav class="nav" id="nav" role="navigation">
+                    <a href="#" class="nav__link nav__link_active js-about-link">About</a>
+                    <a href="#" class="nav__link js-contact-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
