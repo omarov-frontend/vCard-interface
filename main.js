@@ -5,7 +5,8 @@ const contactLink = document.querySelector('.js-contact-link');
 const aboutPage = document.querySelector('.about-page');
 const contactPage = document.querySelector('.contact-page');
 
-aboutLink.addEventListener('click', function() {
+aboutLink.addEventListener('click', function(event) {
+    event.preventDefault();
     aboutPage.style.display = 'block';
     contactPage.style.display = 'none';
 
@@ -13,7 +14,8 @@ aboutLink.addEventListener('click', function() {
     aboutLink.classList.add('nav__link_active');
 });
 
-contactLink.addEventListener('click', function() {
+contactLink.addEventListener('click', function(event) {
+    event.preventDefault();
     contactPage.style.display = 'block';
     aboutPage.style.display = 'none';
 
